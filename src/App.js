@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Show from "./show";
+
+const  data = [
+  {movie: 'the matrix', rating:8.9,actors:['ariel','ali','david']},
+  {movie: 'the dark king', rating:9.9,actors:['kiril','aliko','dav']},
+  {movie: 'the demon', rating:7.9,actors:['yosef','youvl','dar']},
+    {movie: 'tokyo gohll', rating:9.9,actors:['ban','escanor','alain']},
+]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>movies🎥</h1>
+
+             <Show data={data} />
+
+
+
+
     </div>
   );
 }
